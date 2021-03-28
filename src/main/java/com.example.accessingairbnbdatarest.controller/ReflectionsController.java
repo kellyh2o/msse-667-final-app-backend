@@ -14,12 +14,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/listingsAndReviews")
-public class ListingsAndReviewsController {
+public class ReflectionsController {
   @Autowired
-  private ListingsAndReviewsRepository repository;
+  private ReflectionsRepository repository;
 
   @RequestMapping(value = "/", method = RequestMethod.GET)
-  public List<Reflections> getAllListings() {
+  public List<Reflection> getAllListings() {
       return repository.findAll();
   }
 }

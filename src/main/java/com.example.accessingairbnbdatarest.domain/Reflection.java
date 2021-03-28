@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection="reflections")
-public class Reflections {
+public class Reflection {
 
   @Id private String id;
 

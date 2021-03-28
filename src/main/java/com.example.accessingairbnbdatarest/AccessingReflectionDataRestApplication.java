@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AccessingAirbnbDataRestApplication {
+public class AccessingReflectionDataRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccessingAirbnbDataRestApplication.class, args);
+		SpringApplication.run(AccessingReflectionDataRestApplication.class, args);
 	}
 
 }

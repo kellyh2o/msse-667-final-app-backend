@@ -1,6 +1,6 @@
 package com.example.accessingairbnbdatarest.repository;
 
-import com.example.accessingairbnbdatarest.domain.Reflections;
+import com.example.accessingairbnbdatarest.domain.Reflection;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel = "listingsAndReviews", path = "listingsAndReviews")
-public interface ListingsAndReviewsRepository extends MongoRepository<Reflections, String> {
+public interface ReflectionsRepository extends MongoRepository<Reflection, String> {
 
-    List<Reflections> findByName(@Param("name") String name);
+    List<Reflection> findByName(@Param("name") String name);
 
-    Reflections findById(ObjectId id);
+    Reflection findById(ObjectId id);
 }
